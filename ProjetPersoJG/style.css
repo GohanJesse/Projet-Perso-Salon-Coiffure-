@@ -1,0 +1,311 @@
+/* Font utilisées */
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('font/Manrope/Manrope-VariableFont_wght.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aguafina';
+    src: url('font/Aguafina_Script/AguafinaScript-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('font/Roboto_Slab/RobotoSlab-VariableFont_wght.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ELements de la page */
+
+body {
+    color: #3A302D;
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+}
+
+#bloc_page {
+    width: 80%;
+    margin: auto;
+    background-color: #F7F7FF ;
+}
+
+#separateur {
+    border: solid #FF6B35 1px;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#separateur_footer {
+    border: solid #3e4c59 1px;
+}
+
+#btn-orange {
+    width: 227px;
+    height: 55px;
+    background-color: #FF6B35;
+    border-radius: 50px;
+    text-align: center;
+    padding-top: 10px;
+    color: #F7F7FF;
+    cursor: pointer;
+    font-family: 'Manrope', sans-serif;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    font-size: 25px;
+    margin-left: 80px;
+}
+
+#btn-orange:hover {
+    transform: scale(1.1);
+    color: #3A302D;
+}
+
+/* HEADER */
+
+header {
+    height: 20%;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-left: 10%;
+}
+
+header h1 {
+    font-family: 'Aguafina', sans-serif;
+    font-size: 3em;
+    font-weight: normal;
+    margin: 10px;
+}
+
+/* Navigation */
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav li {
+    margin-right: 15px;
+    font-size: 0.8em;
+}
+
+nav a {
+    text-decoration: none;
+    color: #3A302D;
+    font-size: 25px;
+    font-family: 'Manrope', sans-serif;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: #FF6B35;
+}
+
+/* Main */
+
+
+section {
+    display: flex;
+    margin-bottom: 40px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+section h1 {
+    font-family: 'Aguafina', serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #FF6B35;
+    word-spacing: 15px;
+    letter-spacing: 8px;
+}
+
+section h2, p {
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+}
+
+section p {
+    font-size: 18px;
+}
+
+section span {
+    font-family: 'Roboto';
+}
+
+/* presentation */
+
+#presentation_salon h1 {
+    text-align: center;
+}
+
+#presentation_salon img {
+    border-radius: 15px;
+    box-shadow: 0px 0px 100px 0px rgb(0 0 0 / 50%);
+}
+
+#box-btn {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#btn-link {
+    display: flex;
+}
+
+#btn-link #btn-orange {
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+/* News */
+
+#container_news {
+    display: flex;
+    justify-content: center;
+}
+
+#news {
+    display: flex;
+    justify-content: center;
+}
+
+aside {
+    width: 30%;
+    align-items: center;
+}
+
+aside img {
+    border-radius: 15px;
+    box-shadow: 0px 0px 100px 0px rgb(0 0 0 / 50%);
+}
+
+article h2 {
+    font-size: 24px;
+}
+
+article {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+article a {
+    color: #FF6B35;
+}
+
+#text_imp {
+    color: #FF6B35;
+}
+
+/* Service proposés */
+
+#service_adulte {
+     display: flex;
+}
+
+#service_adulte_homme {
+    margin-left: 120px;
+}
+
+#service_adulte_homme, #service_adulte_femme, #service_enfants {
+    display: flex;
+    flex-direction: column;
+}
+
+#service_adulte_homme img, #service_adulte_femme img, #service_enfants img {
+    border-radius: 15px;
+    box-shadow: 0px 0px 100px 0px rgb(0 0 0 / 50%);
+}
+
+#service_adulte_femme p,#service_adulte_homme p, #service_enfants p, span {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+#service_enfants #btn-orange {
+    margin-left: 30%;
+}
+
+.btn {
+    height: 50px;
+    width: 50px;
+    background: #FF6B35;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #F7F7FF;
+    border: solid #FF6B35 1px;
+}
+
+.btn img {
+    width: 25px;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    padding-top: 25px;
+    background-color: #333;
+    color: #F7F7FF;
+}
+
+footer a, footer li, footer p {
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    color: #F7F7FF;
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+footer a:hover {
+    color: #FF6B35;
+}
+
+#information {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#vitrine {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#link_copy {
+    display: flex;
+    justify-content: space-evenly;
+    height: 100px;
+    align-items: center;
+}
